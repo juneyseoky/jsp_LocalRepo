@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+
+div#wrap {
+    width: 290px;
+    padding: 10px;
+    border: 3px solid #aaa;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+form {
+	padding: 5px;
+}
+form li{
+	margin-bottom: 10px;
+}
+
+form li>span{
+	width: 60px;
+	font-size: 17px;
+	display: inline-block;
+}
+form li input[type=text]{
+	width:150px;
+	font-style: 18px;
+	padding: 2px 8px 3px;
+}
+
+form li input[type=radio]{
+	width: 17px;
+	height: 17px;
+	transform: translateY(3px);
+}
+
+form label>span{
+	margin-right: 6px;
+}
+
+form li>span+label{
+	margin-right: 20px;
+}
+
+form select{
+	width: 80px;
+	font-size: 16px;
+	padding: 2px 8px;
+}
+
+form li:last-child{
+	padding-left: 20px;
+	list-style-type :none;
+}
+	
+
+form li:last-child>button {
+	width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+ol{
+	margin-left: 10px;
+	list-style-position: inside;
+}
+ol>li{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+div#btnArea{
+	text-align: center;
+}
+
+div#btnArea>button{
+	width:96%;
+	font-size:18px;
+	font-weight:bold;
+	padding: 6px;
+}
