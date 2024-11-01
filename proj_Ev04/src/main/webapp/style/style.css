@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+* {
+  color: #222; /* 기본 글 색상 */
+  font-family: "Nanum Gothic", sans-serif; /* 나눔고딕체 적용  */
+  text-decoration: none; /* 밑줄 제거  */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div#wrap {
+    width: 420px;
+    padding: 10px;
+    border: 4px solid #aaa;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+h1{
+	text-align: center;
+}
+div#daySelect{
+	margin: 5px;
+	text-align: center;
+}
+div#btnArea{
+	margin: 20px;
+	width: 350px;
+	text-align: center;
+	margin-bottom:5px
+	
+}
+div#btnArea>button{
+	width: 100%;
+	padding: 5px 10px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor : pointer;
+}
+
+div#wrap.comingWrap{
+	width: 300px;
+}
+h2{
+	margin: 5px 0;
+	text-align: center;
+}
+div#today, div#open{
+	text-align: center;
+	margin: 5px 0;
+}
+div#today>span{
+	display:inline-block;
+	width: 80px;
+}
+div#open>span{
+	display:inline-block;
+	width: 80px;
+}
+input[type=text]{
+	font-size: 16px;
+	padding: 2px 0;
+	text-align:right;
+}
+
+input[type=text]:nth-child(2){
+	width: 50px;
+}
+input[type=text]:nth-child(3){
+	width: 30px;
+}
+input[type=text]:nth-child(4){
+	width: 30px;
+}
+div#resTxtArea>p{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	color: #08f;
+}
