@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%
     String numParam = request.getParameter("num");
+
     int num = 0;
     boolean isValidInput = false;
 
@@ -19,18 +20,19 @@
 <head>
     <meta charset="UTF-8">
     <title>숫자 출력 페이지</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     <div id="wrap">
-        <h1>숫자 입력 후 결과 보기</h1>
+        <h2>숫자 입력 후 결과 보기</h2>
         <p>3 ~ 9 사이의 값을 입력하세요:</p>
         <form method="post">
-            <input type="text" name="num"> 
-            <button type="submit">결과 보기</button>
+            <input type="text" name="num" value="<%=num%>"> 
+            <button>결과 보기</button>
         </form>
         
         <div id="txtArea">
-            <p>출력 결과:</p>
+            <h3>[출력 영역]</h3>
             <div id="res">
                 <%
                 if (isValidInput) {
@@ -56,5 +58,6 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" ></script>
 </body>
 </html>
