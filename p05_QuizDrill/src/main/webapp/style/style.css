@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+/*////////////// div#headerWrap 시작 //////////////*/
+div#headerWrap {
+    /* border: 1px solid #08f; */
+    background-color: #caac7d;
+}
+
+/*//////// header#header 시작 ////////*/
+div#headerWrap>header#header {
+    width: 1200px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#headerWrap>header#header>div#headerLogoArea {
+    height: 100px;
+    padding-top: 6px;
+    /* border: 1px solid #aaa; */
+}
+
+#headerWrap>header#header>nav#headerGNBArea {
+    
+    /* height: 100px; */
+    margin: 0 60px 20px 0;
+    /* border: 1px solid #f30; */
+}
+
+/* nav#headerGNBArea 시작 */
+
+#headerWrap #headerGNBArea>ul#mainMenu a {
+    width: 150px;
+    font-size: 16.5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14.5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+}
+
+/* 메인메뉴 좌우 테두리선 겹침 처리 */
+#headerWrap #headerGNBArea>ul#mainMenu>li.mainLi:not(:last-child)>a {    
+    border-right: none;
+}
+
+/* 서브메뉴 상하 테두리선 겹침 처리 */
+#headerWrap #headerGNBArea #mainMenu ul.subMenu>li.subLi>a {    
+    width: 151px;
+    border-top: none;    
+}
+
+
+#headerWrap #headerGNBArea>ul#mainMenu a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#headerWrap #headerGNBArea>ul#mainMenu>li.mainLi {
+    position: relative;
+}
+
+#headerWrap #headerGNBArea ul.subMenu {
+    display: none;
+    position: absolute;
+}
+/* nav#headerGNBArea 끝 */
+
+/*//////// header#header 끝 ////////*/
+
+
+/*////////////// div#headerWrap 시작 //////////////*/
+
+
+/*////////////// div#wrap 시작 //////////////*/
+div#wrap {
+    width: 1200px;
+    /* border: 1px solid #f80; */
+    margin: 2px auto;
+}
+
+#wrap>main#main>div#slideshowArea {
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;  
+    text-align: center;
+    line-height: 300px;
+    border: 1px solid #aaa;
+    margin: 2px;
+    background-color: #ddd;
+}
+
+
+/* #wrap>main#main>div#contents {
+} */
+
+#wrap #contents>.contentParts {
+    height: 200px;
+    font-size: 30px;
+    font-weight: bold;  
+    text-align: center;
+    line-height: 200px;
+    border: 1px solid #aaa;
+    margin: 1px;
+    background-color: #ddd;
+    flex: 1;
+}
+/*////////////// div#wrap 끝 //////////////*/
+
+
+
+/*////////////// div#footerWrap 시작 //////////////*/
+div#footerWrap {
+    /* padding: 10px; */
+    /* border: 1px solid #08f; */
+    background-color: #caac7d;
+}
+div#footerWrap>footer#footer {
+    width: 1200px;
+    /* border: 1px solid #08f; */
+    margin: 0 auto;
+}
+/* 
+div#footerWrap>footer#footer>div.footerArea {
+    border: 1px solid #000;
+} */
+
+div#footerWrap>footer#footer>div#footerLogoArea {
+    width: 240px;    
+    padding-top: 6px;
+}
+#footerWrap>#footer>div#corpAddressArea {
+    padding-top: 20px;
+    flex: 1;
+}
+#footerWrap>#footer>#corpAddressArea>address {
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#footerWrap>#footer>div#snsIconArea {
+    width: 280px;
+    height: 100px;
+    padding-right: 30px;
+    /* border: 1px solid #f00; */
+
+    justify-content: right;
+    align-items: center;
+}
+#footerWrap>#footer>#snsIconArea>a {
+    margin-right: 5px;
+}
+/*////////////// div#footerWrap 끝 //////////////*/
+
+
+
+/*////////////// 시작 //////////////*/
+/*////////////// 끝 //////////////*/
+
+
+/*//////// 시작 ////////*/
+/*//////// 끝 ////////*/
