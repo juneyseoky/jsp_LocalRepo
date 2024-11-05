@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 400px;
+  padding: 10px;
+  border: 3px solid #aaa;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+main#main {
+	margin: 15px 0;
+}
+main#main p {
+	font-size: 24px;
+	text-align: center;
+}
+
+
+div#wrap.loginWrap {
+	width: 300px;
+}
+
+#main form input {
+	width: 90%;
+	font-size: 18px;
+	padding: 4px 10px 5px;
+	margin: 6px auto;
+	display: block;
+}
+
+#main form button {		
+	width: 90%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 10px;
+	border: 1px solid #08f;
+	border-radius: 4px;
+	margin: 12px auto;
+	background-color: #08f;
+	cursor: pointer;
+	display: block;
+}
+
+div#wrap.resWrap {
+	width: 450px;
+}
+
+div#wrap.resWrap h2 {
+	text-align: center;
+}
+
+button#btnBack {
+	color: #fff;
+	width: 100%;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 12px;
+	border: 1px solid #08f;
+	border-radius: 6px;
+	margin: 10px 0;
+	background-color: #08f;
+	cursor: pointer;
+}
