@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		<h1>상품입력</h1>
+		<form action="insert.jsp">
+			<div class="goodsInfo">
+				<span>상품코드</span>
+				<input type="text" name="goodsCode">
+			</div>
+			<div class="goodsInfo">
+				<span>상품명</span>
+				<input type="text" name="goodsName">
+			</div>
+			<div class="goodsInfo">
+				<span>가격</span>
+				<input type="text" name="price">
+			</div>
+			<div class="goodsInfo">
+				<span>재고수량</span>
+				<input type="text" name="cnt">
+			</div>
+			<div id="btnArea">
+				<button>저장</button>
+				<button type="reset">초기화</button>
+			</div>
+		</form>
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
