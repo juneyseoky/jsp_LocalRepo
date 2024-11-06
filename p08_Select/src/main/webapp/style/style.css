@@ -66,3 +66,28 @@ div#goodsListArea {
 	cursor: pointer;
 }
 /* 게시판 목록 내용 끝 */
+
+/* 게시판 수정 내용 시작 */
+form#goodsUpdate span{
+	display: inline-block;
+	padding: 8px 2px;
+	margin-left: 20px;
+}
+div#updateArea input{
+	padding: 4px 2px;
+}
+div#updateArea input:nth-child(2){
+	width : 50px;
+}
+div#updateArea input:nth-child(4){
+	width : 70px;
+}
+div#updateBtnArea{
+	text-align: center;
+}
+div#updateBtnArea>button{
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 2px;
+}
+/* 게시판 목록 내용 끝 */

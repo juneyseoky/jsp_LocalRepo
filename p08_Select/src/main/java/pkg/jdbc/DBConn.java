@@ -105,4 +105,25 @@ public class DBConn {
 		return beanList; 
 	}
 	
+	public int updateGoods(int num, int price) {
+		int chk = 0;
+		try {
+			String sql = "update goodsList set price = ? where num = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, price);
+			pstmt.setInt(2, num);
+			
+			chk = pstmt.executeUpdate();
+			System.out.println(chk);
+			if(chk == 1) {
+				System.out.println("수정 완료");
+			}else {
+				System.out.println("수정 실패");
+			}
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		return chk;
+	}
 }

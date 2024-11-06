@@ -20,6 +20,7 @@
 				<span>상품명</span>
 				<span>가격</span>
 				<span>재고</span>
+				<span>삭제</span>
 			</div>
 			<%
 			ArrayList<DataBean> list = dbConn.selectGoods();
@@ -35,12 +36,26 @@
 				<span><%=goods.getGoodsName()%></span>
 				<span><%=goods.getPrice()%></span>
 				<span><%=goods.getCnt()%></span>
+				<span id="<%=goods.getNum()%>">&times;</span>
 			</div>
 			<%	
 			}
 			%>
+			<div id="updateArea" class="listRow dflex">
+				<form action="/jdbc/updateProc.jsp" id="goodsUpdate">
+					<span>수정할 상품번호</span>
+					<input type="text" name="num">
+					<span>수정할 상품가격</span>
+					<input type="text" name="price">
+				</form>
+			</div>
+			<div id="updateBtnArea">
+				<button type="submit" form="goodsUpdate">수정하기</button>
+			</div>
 		</div>
 	</div>
 	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
 </body>
 </html>    
