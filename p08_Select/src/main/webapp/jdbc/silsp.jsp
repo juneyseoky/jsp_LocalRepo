@@ -24,7 +24,9 @@
 			<%
 			ArrayList<DataBean> list = dbConn.selectGoods();
 			// ArrayList로 return하는 dbConn.selectGoods를 담는 객체 생성
-			for(DataBean goods : list){	
+			for(int i=0; i<list.size(); i++){
+				DataBean goods = list.get(i);
+			// for(DataBean goods : list)
 			// list에 담긴 DTO들을 goods로 하나씩 설정
 			%>
 			<div class="listRow listCol dFlex">
