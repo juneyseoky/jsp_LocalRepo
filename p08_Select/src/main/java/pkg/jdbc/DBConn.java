@@ -126,4 +126,20 @@ public class DBConn {
 		
 		return chk;
 	}
+	
+	public int deleteGoods(String num) {
+		
+		int chk = 0;
+		try {
+			String sql = "delete from goodsList where num = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, num);
+			
+			chk = pstmt.executeUpdate();
+		}catch(SQLException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		return chk;
+	}
 }

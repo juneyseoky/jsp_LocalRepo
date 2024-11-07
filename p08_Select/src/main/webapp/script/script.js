@@ -1,6 +1,6 @@
 $(()=>{
-	$("span").click(()=>{
+	$(".listRow>span").click(function(){
 		let elm = $(this).prop('id');
-		console.log(elm);
+		location.href = "goodsDelete.jsp?num="+elm;
 	});
 });
