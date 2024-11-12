@@ -6,6 +6,8 @@
 <%
 Connection conn = null;
 try{
+	// static(정적) 메소드는 객체를 생성할 필요없이
+	// 바로 가져와 사용할 수 있다.
 	conn = DBConn.mtdGetConn();
 }catch(Exception e){
 	out.print(e.getMessage());
