@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 500px;
+  padding: 20px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	margin-bottom: 15px;
+	text-indent: 15px;
+}
+
+
+div#goodsListArea {
+	width: 100%;
+/* 	border: 1px solid #000; */
+}
+
+
+/* 게시판 목록의 공통 사항 시작 */
+#goodsListArea .listCol>span {
+	padding: 8px 2px;
+/* 	border: 1px solid #f80; */
+}
+
+#goodsListArea .listCol>span:nth-child(1) {
+	width: 60px;
+}
+#goodsListArea .listCol>span:nth-child(2) {
+	flex: 1;
+}
+#goodsListArea .listCol>span:nth-child(3) {
+	width: 110px;
+}
+#goodsListArea .listCol>span:nth-child(4) {
+	width: 70px;
+}
+#goodsListArea .listCol>span:nth-child(5) {
+	width: 50px;
+}
+#goodsListArea .listCol>span:nth-child(6) {
+	width: 50px;
+}
+/* 게시판 목록의 공통 사항 끝 */
+
+/* 게시판 목록 열제목 시작 */
+#goodsListArea #listHeader {
+	background-color: rgba(0, 136, 255, 0.4);
+}
+#goodsListArea #listHeader>span {
+	font-weight: bold;
+	text-align: center;
+}
+/* 게시판 목록 열제목 끝 */
+
+
+/* 게시판 목록 내용 시작 */
+#goodsListArea .listRow {
+	border-bottom: 1px solid #aaa;
+}
+#goodsListArea .listRow>span:not(:nth-child(2)) {
+	text-align: center;
+}
+#goodsListArea .listRow:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+/* 게시판 목록 내용 끝 */
+
+/* 게시판 수정 내용 시작 */
+form#goodsUpdate span{
+	display: inline-block;
+	padding: 8px 2px;
+	margin-left: 20px;
+}
+div#updateArea input{
+	padding: 4px 2px;
+}
+div#updateArea input:nth-child(2){
+	width : 50px;
+}
+div#updateArea input:nth-child(4){
+	width : 70px;
+}
+div#updateBtnArea{
+	text-align: center;
+}
+div#updateBtnArea>button{
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 2px;
+}
+/* 게시판 목록 내용 끝 */
